@@ -162,6 +162,9 @@ ________________________
 
 .item1{
     background-color: rgb(255, 190, 225);
+    position: sticky;
+    top: 50px;
+    left: 50px;
 }
 
 .item2{
@@ -190,6 +193,19 @@ ________________________
     margin: 10px;
     font-size: 25px;
 }
+.font__container {
+    height: auto;
+    margin: 10px;
+    font-size: 25px;
+    }
+    .font__1em {
+    font-size: 1em;
+    }
+    .font__1rem {
+    font-size: 1rem;
+    }
+    .font__100percent {
+    font-size: 100%;}
 
 
 /*
@@ -201,6 +217,12 @@ ________________________
     display: flex;
     justify-content: center;
     align-items: center;
+
+    /*flex-direction:column-reverse;
+flex-wrap:wrap-reverse;
+justify-content:center;
+align-content:space-between;*/
+    
 }
 
 /*
@@ -211,11 +233,16 @@ ________________________
 .media__container{
     height: 20vh;
     width: 90vw;
-    margin-bottom: 50px;
+    margin-bottom: 60px;
     background-color: var(--primary-100);
+    
 }
 /* Extra small devices (phones, 600px and down) */
-
+@media screen {
+    .media__container{
+        background-color: var(--primary-200);
+    }
+}
 
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
